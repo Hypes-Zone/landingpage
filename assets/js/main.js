@@ -321,8 +321,8 @@ $('.odometer').appear(function (e) {
 	=         Upcoming Time           =
 =============================================*/
 var element = $('#countdown-gampang');
-var finish_d = new Date();
-finish_d.setDate(finish_d.getDate() + 50);
+var finish_d = new Date("2024-02-28");
+finish_d.setDate(finish_d.getDate());
 element.CountdownGampang({
 	rampung: finish_d,
 });

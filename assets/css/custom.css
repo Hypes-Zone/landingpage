@@ -1,0 +1,7 @@
+.banner-img {
+    border-radius: 10%;
+    object-fit: cover;
+    z-index: 2;
+    max-height: 400px;
+    width: auto;
+}
