@@ -5,3 +5,12 @@
     max-height: 400px;
     width: auto;
 }
+
+#partners {
+    padding-top: 100px;
+    margin-bottom: -100px;
+}
+
+.carousel-item-3 {
+    padding: 25px;
+}
