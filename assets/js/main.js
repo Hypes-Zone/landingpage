@@ -181,6 +181,7 @@ function mainSlider() {
 $('[data-countdown]').each(function () {
 	var $this = $(this), finalDate = $(this).data('countdown');
 	$this.countdown(finalDate, function (event) {
+
 		$this.html(event.strftime('<div class="time-count day"><span>%D</span>Days</div><div class="time-count hour"><span>%H</span>hour</div><div class="time-count min"><span>%M</span>minute</div><div class="time-count sec"><span>%S</span>second</div>'));
 	});
 });
@@ -321,8 +322,8 @@ $('.odometer').appear(function (e) {
 	=         Upcoming Time           =
 =============================================*/
 var element = $('#countdown-gampang');
-var finish_d = new Date("2024-02-28");
-finish_d.setDate(finish_d.getDate());
+var finish_d = new Date();
+finish_d.setUTCDate(finish_d.getDate());
 element.CountdownGampang({
 	rampung: finish_d,
 });
